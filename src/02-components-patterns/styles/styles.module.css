@@ -39,6 +39,7 @@
 }
 
 .countLabel {
+    background-color: transparent;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     font-size: 16px;
