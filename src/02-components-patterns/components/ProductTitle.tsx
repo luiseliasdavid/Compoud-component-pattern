@@ -5,9 +5,10 @@ import styles from "../styles/styles.module.css";
 export interface PropsTitle {
   title?: string;
   className?:string
+  style?: React.CSSProperties
 }
 
-export const ProductTitle = ({ title, className }: PropsTitle) => {
+export const ProductTitle = ({ title, className, style }: PropsTitle) => {
     const { product } = useContext(ProductContext);
   let titleToShow: string;
 
@@ -16,5 +17,7 @@ export const ProductTitle = ({ title, className }: PropsTitle) => {
   } else {
     titleToShow= product.title
   }
-  return <span className={`${styles.productDescription} ${className}`}> {titleToShow} </span>;
+  return <span 
+  style={style}
+  className={`${styles.productDescription} ${className}`}> {titleToShow} </span>;
 };
