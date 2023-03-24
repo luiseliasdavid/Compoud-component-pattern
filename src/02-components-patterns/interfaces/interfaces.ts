@@ -27,6 +27,6 @@ export interface ProductCardHOCProps {
 }
 
 export interface OnChangeArgs {
-  producto: Product;
+  product: Product;
   count:number
 } 
